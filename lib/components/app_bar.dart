@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-
 import '../constants.dart';
 
 AppBar buildAppBar(BuildContext context,
     {bool isTransparent = false, String title}) {
   return AppBar(
+
+
     backgroundColor: isTransparent ? Colors.transparent : Colors.white,
     elevation: 0,
+
     leading: IconButton(
       icon: Icon(
         Icons.menu,

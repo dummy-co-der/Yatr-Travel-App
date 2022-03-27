@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Travels App',
+      title: 'Uttarakhand',
       theme: ThemeData(
         brightness: Brightness.light,
         scaffoldBackgroundColor: Colors.white,
@@ -23,5 +23,6 @@ class MyApp extends StatelessWidget {
       ),
       home: HomeScreen(),
     );
+
   }
 }

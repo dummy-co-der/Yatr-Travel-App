@@ -16,7 +16,7 @@ class PopularPlaces extends StatelessWidget {
     return Column(
       children: [
         SectionTitle( 
-          title: "Right Now At Spark",
+          title: "Places to Visit",
           press: () {},
         ),
         VerticalSpacing(of: 20),

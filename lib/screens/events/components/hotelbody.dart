@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:travel/components/place_card.dart';
 import 'package:travel/constants.dart';
-import 'package:travel/models/TravelSpot.dart';
+import 'package:travel/models/HotelSpot.dart';
 import 'package:travel/size_config.dart';
 
-class Body extends StatelessWidget {
+class hotelbody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: SizeConfig.screenWidth,
       child: Padding(
         padding:
-            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(25)),
+        EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(25)),
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(bottom: 25),
@@ -20,14 +20,14 @@ class Body extends StatelessWidget {
               runSpacing: 25,
               children: [
                 ...List.generate(
-                  travelSpots.length,
-                  (index) => PlaceCard(
-                    travelSport: travelSpots[index],
+                  hotelSpots.length,
+                      (index) => HotelCard(
+                    hotelSport: hotelSpots[index],
                     isFullCard: true,
                     press: () {},
                   ),
                 ),
-                // AddNewPlaceCard(),
+                AddNewHotelCard(),
               ],
             ),
           ),
@@ -37,8 +37,8 @@ class Body extends StatelessWidget {
   }
 }
 
-class AddNewPlaceCard extends StatelessWidget {
-  const AddNewPlaceCard({
+class AddNewHotelCard extends StatelessWidget {
+  const AddNewHotelCard({
     Key key,
   }) : super(key: key);
 
@@ -77,7 +77,7 @@ class AddNewPlaceCard extends StatelessWidget {
           ),
           VerticalSpacing(of: 10),
           Text(
-            "Add New Place",
+            "Add New Hotel Place",
             style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
           ),
         ],
@@ -85,6 +85,3 @@ class AddNewPlaceCard extends StatelessWidget {
     );
   }
 }
-
-
-

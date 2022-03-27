@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel/screens/events/events_screen.dart';
-
+import 'package:travel/screens/events/components/hotel_screen.dart';
 import '../constants.dart';
+import '../screens/events/components/food_screen.dart';
 import '../size_config.dart';
 
 class CustomBottonNavBar extends StatelessWidget {
@@ -37,7 +38,14 @@ class CustomBottonNavBar extends StatelessWidget {
                 icon: "assets/icons/hotel.svg",
                 title: "Hotel",
                 isActive: true,
-                press: () {},
+                press: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                  builder: (context) => HotelScreen(),
+                      )
+                  );
+                },
               ),
               NavItem(
                 icon: "assets/icons/place.svg",
@@ -49,7 +57,13 @@ class CustomBottonNavBar extends StatelessWidget {
                 icon: "assets/icons/food.svg",
                 title: "Food",
                 isActive: true,
-                press: () {},
+                press: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FoodScreen(),
+                      ));
+                },
               ),
               NavItem(
                 icon: "assets/icons/feeds.svg",

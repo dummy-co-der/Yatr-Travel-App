@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../size_config.dart';
 import 'search_fields.dart';
 
@@ -29,7 +28,7 @@ class HomeHeader extends StatelessWidget {
               Text(
                 "Uttarakhand - Land of God",
                 style: TextStyle(
-                    fontSize: getProportionateScreenWidth(23),
+                    fontSize: getProportionateScreenWidth(28),
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     height: 0.2),

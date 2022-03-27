@@ -27,18 +27,18 @@ class TopTravelers extends StatelessWidget {
             color: Colors.white,
             boxShadow: [kDefualtShadow],
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              ...List.generate(
-                topTravelers.length,
-                (index) => UserCard(
-                  user: topTravelers[index],
-                  press: () {},
-                ),
-              ),
-            ],
-          ),
+          // child: Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   children: [
+          //     ...List.generate(
+          //       topTravelers.length,
+          //       (index) => UserCard(
+          //         user: topTravelers[index],
+          //         press: () {},
+          //       ),
+          //     ),
+          //   ],
+          // ),
         )
       ],
     );
