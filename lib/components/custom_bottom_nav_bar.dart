@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel/screens/events/events_screen.dart';
 import 'package:travel/screens/events/components/hotel_screen.dart';
+import 'package:travel/screens/events/components/locale_screen.dart';
 import '../constants.dart';
 import '../screens/events/components/food_screen.dart';
+import '../screens/events/components/feed_screen.dart';
 import '../size_config.dart';
 
 class CustomBottonNavBar extends StatelessWidget {
@@ -19,7 +21,7 @@ class CustomBottonNavBar extends StatelessWidget {
       child: SafeArea(
         child: Padding(
           padding:
-              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(2), vertical: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -51,7 +53,14 @@ class CustomBottonNavBar extends StatelessWidget {
                 icon: "assets/icons/place.svg",
                 title: "Place",
                 isActive: true,
-                press: () {},
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LocaleScreen(),
+                    )
+                  );
+                },
               ),
               NavItem(
                 icon: "assets/icons/food.svg",
@@ -68,7 +77,14 @@ class CustomBottonNavBar extends StatelessWidget {
               NavItem(
                 icon: "assets/icons/feeds.svg",
                 title: "Feeds",
-                press: () {},
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FeedScreen(),
+                    )
+                  );
+                },
               ),
             ],
           ),
@@ -108,7 +124,7 @@ class NavItem extends StatelessWidget {
             SvgPicture.asset(
               icon,
               color: kTextColor,
-              height: 28,
+              height: 20,
             ),
             Spacer(),
             Text(
