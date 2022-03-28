@@ -14,22 +14,33 @@ class PopularPlaces extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+
       children: [
-        SectionTitle( 
-          title: "Places to Visit",
-          press: () {},
+        // SectionTitle(
+        //   // title: "Places to Visit",
+        //   // press: () {},
+        // ),
+        ListTile(
+          title: Padding(
+            padding: const EdgeInsets.only(top:80),
+            child: Text('Suggestions for You ⛅ '),
+          ),
         ),
+
         VerticalSpacing(of: 20),
         SingleChildScrollView(
           clipBehavior: Clip.none,
           scrollDirection: Axis.horizontal,
           child: Row(
+
             children: [
               ...List.generate(
                 travelSpots.length,
                 (index) => Padding(
                   padding: EdgeInsets.only(
-                      left: getProportionateScreenWidth(kDefaultPadding)),
+                      left: getProportionateScreenWidth(kDefaultPadding),
+                      top: getProportionateScreenWidth(30),
+                  ),
                   child: PlaceCard(
                     travelSport: travelSpots[index],
                     press: () {},

@@ -118,7 +118,7 @@ class Travelers extends StatelessWidget {
           //   },
           // ),
           Positioned(
-            left: (22 * totalUser).toDouble(),
+            // left: (22 * totalUser).toDouble(),
             child: Container(
               height: getProportionateScreenWidth(28),
               width: getProportionateScreenWidth(28),
@@ -126,7 +126,7 @@ class Travelers extends StatelessWidget {
                 color: kPrimaryColor,
                 shape: BoxShape.circle,
               ),
-              child: Icon(Icons.add, color: Colors.white),
+              child: Icon(Icons.keyboard_arrow_down, color: Colors.white),
             ),
           )
         ],
