@@ -17,36 +17,29 @@ class FeedSpot {
 List<FeedSpot> feedSpots = [
   FeedSpot(
 // users: users..shuffle(),
-    name: "The Swigs Cafe",
-    image: "assets/images/The-Swigs.png",
+    name: "John",
+    image: "assets/images/John.png",
     date: DateTime(2020, 10, 15),
   ),
 
   FeedSpot(
 // users: users..shuffle(),
-    name: "Hoshiyar Puri",
-    image: "assets/images/Hoshiyar.png",
+    name: "James",
+    image: "assets/images/james.png",
     date: DateTime(2020, 3, 10),
   ),
 
   FeedSpot(
 // users: users..shuffle(),
-    name: "Dosa Plaza Punjabitdka",
-    image: "assets/images/dosa-plaza.png",
+    name: "Rosy",
+    image: "assets/images/rosy.png",
     date: DateTime(2020, 3, 10),
   ),
 
   FeedSpot(
 // users: users..shuffle(),
-    name: "Kalsang",
-    image: "assets/images/kalsang.png",
-    date: DateTime(2020, 3, 10),
-  ),
-
-  FeedSpot(
-// users: users..shuffle(),
-    name: "Barbeque Bay",
-    image: "assets/images/barbeque.png",
+    name: "Christine",
+    image: "assets/images/marry.png",
     date: DateTime(2020, 3, 10),
   ),
 ];
