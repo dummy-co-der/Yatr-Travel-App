@@ -37,26 +37,41 @@ class HomeScreen extends StatelessWidget {
             DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.purple,
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/drawer.png"),
+                      fit: BoxFit.cover)
               ),
               child: Text(
-                'Drawer Header',
+                'Welcome to Uttarakhand',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 24,
+                  fontSize: 35,
                 ),
               ),
             ),
             ListTile(
-              leading: Icon(Icons.message),
-              title: Text('Messages'),
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+            ),
+            ListTile(
+              leading: Icon(Icons.event),
+              title: Text('Upcoming Events'),
+            ),
+            ListTile(
+              leading: Icon(Icons.light_mode),
+              title: Text('Switch to Dark Mode'),
             ),
             ListTile(
               leading: Icon(Icons.account_circle),
               title: Text('Profile'),
             ),
             ListTile(
-              leading: Icon(Icons.settings),
+              leading: Icon(Icons.miscellaneous_services_sharp),
               title: Text('Settings'),
+            ),
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text('Logout'),
             ),
           ],
         ),

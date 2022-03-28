@@ -26,13 +26,13 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.3
+  cupertino_icons: ^1.0.4
   # Allows you to easily use any of the 977 fonts
-  google_fonts: ^1.1.0
+  google_fonts: ^2.3.1
   # Allow us to use .svg file
   flutter_svg:
   # Date and number formatting and parsing
-  intl: ^0.16.1
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
