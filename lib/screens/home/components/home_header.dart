@@ -19,32 +19,39 @@ class HomeHeader extends StatelessWidget {
             "assets/images/home_bg.png",
             fit: BoxFit.cover,
             width: double.infinity,
-            height: getProportionateScreenHeight(315),
+            height: getProportionateScreenHeight(325),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: getProportionateScreenHeight(80)),
+              SizedBox(height: getProportionateScreenHeight(70)),
               Text(
-                "Uttarakhand - Land of God",
+                "  Uttarakhand - Land of God",
                 style: TextStyle(
                     fontSize: getProportionateScreenWidth(28),
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    height: 0.2),
+                    height: 0.4),
               ),
               Text(
-                "Travel Community App",
+                "    Travel Community App",
                 style: TextStyle(color: Colors.white),
+              ),
+              Image.asset(
+                "assets/images/weather.png",
+                height: getProportionateScreenHeight(105),
+                width:getProportionateScreenHeight(400),
               ),
             ],
           ),
+
           Positioned(
-            bottom: getProportionateScreenWidth(-25),
+            bottom: getProportionateScreenWidth(-100),
             child: SearchField(),
           )
         ],
       ),
+
     );
   }
 }

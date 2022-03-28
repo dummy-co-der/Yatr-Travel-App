@@ -30,9 +30,9 @@ class SearchField extends StatelessWidget {
       child: TextField(
         onChanged: (value) {},
         decoration: InputDecoration(
-          hintText: "Search your destination…",
+          hintText: " Uttarakhand  ",
           hintStyle: TextStyle(
-            fontSize: getProportionateScreenWidth(12),
+            fontSize: getProportionateScreenWidth(15),
             color: Color(0xFF464A7E),
           ),
           suffixIcon: Icon(Icons.search),

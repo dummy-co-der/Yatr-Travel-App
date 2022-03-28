@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           children: const <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.purple,
+                // color: Colors.purple,
                   image: DecorationImage(
                       image: AssetImage("assets/images/drawer.png"),
                       fit: BoxFit.cover)
