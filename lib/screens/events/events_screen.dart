@@ -8,7 +8,7 @@ class EventsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, title: "New Events"),
+      appBar: buildAppBar(context, title: "Suggestions for you ⛅"),
       body: Body(),
       bottomNavigationBar: CustomBottonNavBar(),
     );
