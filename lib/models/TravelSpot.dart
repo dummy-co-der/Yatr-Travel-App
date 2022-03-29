@@ -23,8 +23,8 @@ List<TravelSpot> travelSpots = [
   ),
   TravelSpot(
     // users: users..shuffle(),
-    name: "Badrinath",
-    image: "assets/images/badrinath-yatra.jpg",
+    name: "Paragliding",
+    image: "assets/images/Paragliding.jpg",
     date: DateTime(2020, 3, 10),
   ),
   TravelSpot(
