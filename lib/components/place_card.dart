@@ -63,20 +63,28 @@ class PlaceCard extends StatelessWidget {
                     fontSize: isFullCard ? 17 : 12,
                   ),
                 ),
-                if (isFullCard)
-                  Text(
-                    travelSport.date.day.toString(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4
-                        .copyWith(fontWeight: FontWeight.bold),
+                Text(
+                  travelSport.text,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: isFullCard ? 17 : 12,
                   ),
-                if (isFullCard)
-                  Text(
-                    DateFormat.MMMM().format(travelSport.date) +
-                        " " +
-                        travelSport.date.year.toString(),
-                  ),
+                ),
+                // if (isFullCard)
+                //   Text(
+                //     travelSport.date.day.toString(),
+                //     style: Theme.of(context)
+                //         .textTheme
+                //         .headline4
+                //         .copyWith(fontWeight: FontWeight.bold),
+                //   ),
+                // if (isFullCard)
+                //   Text(
+                //     DateFormat.MMMM().format(travelSport.date) +
+                //         " " +
+                //         travelSport.date.year.toString(),
+                //   ),
                 VerticalSpacing(of: 10),
                 Travelers(
                   // users: travelSport.users,
@@ -204,20 +212,28 @@ Widget build(BuildContext context) {
                   fontSize: isFullCard ? 17 : 12,
                 ),
               ),
-              if (isFullCard)
-                Text(
-                  foodSport.date.day.toString(),
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline4
-                      .copyWith(fontWeight: FontWeight.bold),
+              Text(
+                foodSport.text,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: isFullCard ? 17 : 12,
                 ),
-              if (isFullCard)
-                Text(
-                  DateFormat.MMMM().format(foodSport.date) +
-                      " " +
-                      foodSport.date.year.toString(),
-                ),
+              ),
+              // if (isFullCard)
+              //   Text(
+              //     foodSport.date.day.toString(),
+              //     style: Theme.of(context)
+              //         .textTheme
+              //         .headline4
+              //         .copyWith(fontWeight: FontWeight.bold),
+              //   ),
+              // if (isFullCard)
+              //   Text(
+              //     DateFormat.MMMM().format(foodSport.date) +
+              //         " " +
+              //         foodSport.date.year.toString(),
+              //   ),
               VerticalSpacing(of: 10),
               Travelers(
                 // users: travelSport.users,
@@ -344,20 +360,15 @@ class HotelCard extends StatelessWidget {
                     fontSize: isFullCard ? 17 : 12,
                   ),
                 ),
-                if (isFullCard)
-                  Text(
-                    hotelSport.date.day.toString(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4
-                        .copyWith(fontWeight: FontWeight.bold),
+                Text(
+                  hotelSport.text,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: isFullCard ? 17 : 12,
                   ),
-                if (isFullCard)
-                  Text(
-                    DateFormat.MMMM().format(hotelSport.date) +
-                        " " +
-                        hotelSport.date.year.toString(),
-                  ),
+                ),
+
                 VerticalSpacing(of: 10),
                 Travelers(
                   // users: travelSport.users,
@@ -484,20 +495,28 @@ class FeedCard extends StatelessWidget {
                     fontSize: isFullCard ? 17 : 12,
                   ),
                 ),
-                if (isFullCard)
-                  Text(
-                    feedSport.date.day.toString(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4
-                        .copyWith(fontWeight: FontWeight.bold),
+                Text(
+                  feedSport.text,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: isFullCard ? 17 : 12,
                   ),
+                ),
                 if (isFullCard)
-                  Text(
-                    DateFormat.MMMM().format(feedSport.date) +
-                        " " +
-                        feedSport.date.year.toString(),
-                  ),
+                  // Text(
+                  //   feedSport.date.day.toString(),
+                  //   style: Theme.of(context)
+                  //       .textTheme
+                  //       .headline4
+                  //       .copyWith(fontWeight: FontWeight.bold),
+                  // ),
+                if (isFullCard)
+                  // Text(
+                  //   DateFormat.MMMM().format(feedSport.date) +
+                  //       " " +
+                  //       feedSport.date.year.toString(),
+                  // ),
                 VerticalSpacing(of: 10),
                 Travelers(
                   // users: travelSport.users,
@@ -626,20 +645,28 @@ class LocaleCard extends StatelessWidget {
                     fontSize: isFullCard ? 17 : 12,
                   ),
                 ),
-                if (isFullCard)
-                  Text(
-                    localeSport.date.day.toString(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4
-                        .copyWith(fontWeight: FontWeight.bold),
+                Text(
+                  localeSport.text,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: isFullCard ? 17 : 12,
                   ),
-                if (isFullCard)
-                  Text(
-                    DateFormat.MMMM().format(localeSport.date) +
-                        " " +
-                        localeSport.date.year.toString(),
-                  ),
+                ),
+                // if (isFullCard)
+                //   Text(
+                //     localeSport.date.day.toString(),
+                //     style: Theme.of(context)
+                //         .textTheme
+                //         .headline4
+                //         .copyWith(fontWeight: FontWeight.bold),
+                //   ),
+                // if (isFullCard)
+                //   Text(
+                //     DateFormat.MMMM().format(localeSport.date) +
+                //         " " +
+                //         localeSport.date.year.toString(),
+                //   ),
                 VerticalSpacing(of: 10),
                 Travelers(
                   // users: travelSport.users,
